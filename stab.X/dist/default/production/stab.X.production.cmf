@@ -1,0 +1,463 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\adm\AppData\Local\Temp\s3ps.obj
+end_init CODE 0 B B 1 2
+reset_vec CODE 0 0 0 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\stab.X.production.obj
+cinit CODE 0 C C 7 2
+intentry CODE 0 4 4 7 2
+text5 CODE 0 10A 10A 72 2
+text4 CODE 0 17C 17C 2A 2
+text3 CODE 0 1A6 1A6 1C 2
+text2 CODE 0 1D7 1D7 C 2
+text1 CODE 0 1C2 1C2 15 2
+maintext CODE 0 13 13 F7 2
+cstackBANK0 BANK0 1 35 35 B 1
+clrtext CODE 0 1E3 1E3 8 2
+bssBANK0 BANK0 1 20 20 15 1
+nvBANK0 BANK0 1 40 40 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0041-005D 1
+CODE 0001-0003 2
+CODE 01EB-03FE 2
+CONST 0001-0003 2
+CONST 01EB-03FE 2
+EEDATA 2100-217F 2
+ENTRY 0001-0003 2
+ENTRY 01EB-03FE 2
+IDLOC 2000-2003 2
+RAM 0041-005D 1
+SFR0 0000-001F 1
+SFR1 0080-00DD 1
+STACK 0041-005D 1
+STRCODE 0001-0003 2
+STRCODE 01EB-03FE 2
+STRING 0001-0003 2
+STRING 01EB-03FE 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\stab.X.production.obj
+"Y:\Projects\Стабилизатор\stab.X\main.c":183 4 intentry CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":337 C cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":340 C cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":408 C cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":407 D cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":409 E cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":410 F cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":411 10 cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":417 11 cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":418 11 cinit CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":419 12 cinit CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":69 13 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":70 13 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":71 16 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":72 18 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":73 1A maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":74 1D maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":75 1E maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":76 21 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":77 24 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":78 27 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":79 2B maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":80 2F maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":81 31 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":83 32 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":84 33 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":87 35 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":88 39 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":89 3B maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":92 3C maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":93 3F maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":94 40 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":95 41 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":64 43 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":100 48 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":101 56 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":103 57 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":104 5D maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":106 5E maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":107 64 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":110 65 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":111 6C maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":112 6F maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":113 72 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":115 75 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":116 80 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":118 82 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":119 8C maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":123 8E maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":125 91 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":126 99 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":127 9A maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":130 9B maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":131 A3 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":132 A4 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":136 A5 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":137 BA maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":138 BB maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":139 BC maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":148 BD maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":149 C0 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":151 C9 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":150 CA maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":151 CB maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":152 CE maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":153 D4 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":154 D5 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":156 D6 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":157 E2 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":158 E4 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":161 E5 maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":162 EA maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":163 EB maintext CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":183 10A text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":184 10A text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":185 10C text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":186 10D text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":187 10F text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":188 10F text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":189 111 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":190 112 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":191 119 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":194 11C text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":195 11F text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":198 120 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":199 127 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":200 12A text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":202 12B text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":206 12D text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":207 137 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":208 139 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":209 13A text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":210 13C text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":213 13D text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":214 145 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":215 146 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":217 148 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":218 153 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":219 154 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":223 156 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":224 15C text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":227 15D text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":228 166 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":231 167 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":232 171 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":233 173 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":234 174 text5 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":242 175 text5 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":6 17C text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":14 17C text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":15 17E text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":16 182 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 183 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":19 183 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 184 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":18 186 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":17 189 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":22 18A text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":23 18D text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":24 195 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":25 19B text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":27 19C text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":28 19F text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":30 1A1 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c":31 1A5 text4 CODE
+"Y:\Projects\Стабилизатор\stab.X\eewrite.c":6 1A6 text3 CODE
+"Y:\Projects\Стабилизатор\stab.X\eewrite.c":8 1A7 text3 CODE
+"Y:\Projects\Стабилизатор\stab.X\eewrite.c":9 1C1 text3 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":6 1C2 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":10 1C3 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":8 1C5 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":9 1C5 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":10 1C6 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":11 1C9 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\eeread.c":12 1D6 text1 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":171 1D7 text2 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":173 1D7 text2 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":177 1DA text2 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":179 1DC text2 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":180 1E0 text2 CODE
+"Y:\Projects\Стабилизатор\stab.X\main.c":181 1E2 text2 CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":394 1E3 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":395 1E3 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":396 1E4 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":397 1E4 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":398 1E5 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":399 1E6 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":400 1E7 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":401 1E8 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":402 1E9 clrtext CODE
+"C:\Users\adm\AppData\Local\Temp\s3ps.":403 1EA clrtext CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___lwdiv@dividend 39 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+___lwdiv@counter 3D 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+PL2 1DA 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+PL4 1FA 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+PL6 208 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+_RD 4E0 0 ABS 0 - dist/default/production\stab.X.production.obj
+_WR 4E1 0 ABS 0 - dist/default/production\stab.X.production.obj
+_main_counter 20 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+_GP1 29 0 ABS 0 - dist/default/production\stab.X.production.obj
+_GP2 2A 0 ABS 0 - dist/default/production\stab.X.production.obj
+_GP3 2B 0 ABS 0 - dist/default/production\stab.X.production.obj
+_GP4 2C 0 ABS 0 - dist/default/production\stab.X.production.obj
+_GP5 2D 0 ABS 0 - dist/default/production\stab.X.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 41 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_GIE 5F 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hintentry 16 0 CODE 0 intentry -
+__Lintentry 8 0 CODE 0 intentry -
+__CFG_BOREN$ON 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__pintentry 8 0 CODE 0 intentry dist/default/production\stab.X.production.obj
+__end_of_button_action 3C6 0 CODE 0 text2 dist/default/production\stab.X.production.obj
+_PIE1 8C 0 ABS 0 - dist/default/production\stab.X.production.obj
+_T0IF 5A 0 ABS 0 - dist/default/production\stab.X.production.obj
+_ADIF 66 0 ABS 0 - dist/default/production\stab.X.production.obj
+_WREN 4E2 0 ABS 0 - dist/default/production\stab.X.production.obj
+_GPIO 5 0 ABS 0 - dist/default/production\stab.X.production.obj
+_main 26 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+___sp 0 0 STACK 2 stack C:\Users\adm\AppData\Local\Temp\s3ps.obj
+btemp 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+ltemp 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+ttemp 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+_volt 26 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+start 16 0 CODE 0 init C:\Users\adm\AppData\Local\Temp\s3ps.obj
+_adc_flag 2D 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+_btn_flag 2F 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\adm\AppData\Local\Temp\s3ps.obj
+_ANSEL 9F 0 ABS 0 - dist/default/production\stab.X.production.obj
+_EEADR 9B 0 ABS 0 - dist/default/production\stab.X.production.obj
+_CMCON 19 0 ABS 0 - dist/default/production\stab.X.production.obj
+ltemp0 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+ttemp0 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp0 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+ltemp1 62 0 ABS 0 - dist/default/production\stab.X.production.obj
+ttemp1 61 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp1 60 0 ABS 0 - dist/default/production\stab.X.production.obj
+ltemp2 66 0 ABS 0 - dist/default/production\stab.X.production.obj
+ttemp2 64 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp2 62 0 ABS 0 - dist/default/production\stab.X.production.obj
+ltemp3 60 0 ABS 0 - dist/default/production\stab.X.production.obj
+ttemp3 67 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp3 64 0 ABS 0 - dist/default/production\stab.X.production.obj
+ttemp4 5F 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp4 66 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp5 68 0 ABS 0 - dist/default/production\stab.X.production.obj
+wtemp6 5F 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hosccal 7FE 0 CODE 0 osccal -
+__Losccal 7FE 0 CODE 0 osccal -
+interrupt_function 8 0 CODE 0 intentry dist/default/production\stab.X.production.obj
+_CARRY 18 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hconfig 4010 0 CONFIG 0 config -
+__Lconfig 400E 0 CONFIG 0 config -
+___osccal_val 7FE 0 CODE 0 osccal C:\Users\adm\AppData\Local\Temp\s3ps.obj
+__size_of_eeprom_read 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hram 7FE 0 ABS 0 ram -
+__Lram 7FE 0 ABS 0 ram -
+_measure_counter 32 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Lfunctab 0 0 CODE 0 functab -
+_ADCON0 1F 0 ABS 0 - dist/default/production\stab.X.production.obj
+_EECON1 9C 0 ABS 0 - dist/default/production\stab.X.production.obj
+_EECON2 9D 0 ABS 0 - dist/default/production\stab.X.production.obj
+_OPTION_REG 81 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hcommon 7FE 0 ABS 0 common -
+__Lcommon 7FE 0 ABS 0 common -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+___int_sp 0 0 STACK 2 stack C:\Users\adm\AppData\Local\Temp\s3ps.obj
+_volt_set 2A 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+_EEDATA 9A 0 ABS 0 - dist/default/production\stab.X.production.obj
+_high_isr 214 0 CODE 0 text5 dist/default/production\stab.X.production.obj
+?___lwdiv 37 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+_ADRESH 1E 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Habs1 7FE 0 ABS 0 abs1 -
+__Labs1 7FE 0 ABS 0 abs1 -
+_ADRESL 9E 0 ABS 0 - dist/default/production\stab.X.production.obj
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+_INTCON B 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hsfr0 7FE 0 ABS 0 sfr0 -
+__Lsfr0 7FE 0 ABS 0 sfr0 -
+_TRISIO 85 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hsfr1 7FE 0 ABS 0 sfr1 -
+__Lsfr1 7FE 0 ABS 0 sfr1 -
+__Hcode 7FE 0 ABS 0 code -
+__Lcode 7FE 0 ABS 0 code -
+_led_flash 31 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+stackhi 0 0 ABS 0 - C:\Users\adm\AppData\Local\Temp\s3ps.obj
+__HcstackBANK0 7FE 0 ABS 0 cstackBANK0 -
+__LcstackBANK0 7FE 0 ABS 0 cstackBANK0 -
+__pcstackBANK0 35 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+stacklo 0 0 ABS 0 - C:\Users\adm\AppData\Local\Temp\s3ps.obj
+saved_w 5E 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hinit 16 0 CODE 0 init -
+__Linit 16 0 CODE 0 init -
+__end_of_main 1DA 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+__Htext 7FE 0 ABS 0 text -
+__Ltext 7FE 0 ABS 0 text -
+end_of_initialization 22 0 CODE 0 cinit dist/default/production\stab.X.production.obj
+__HnvBANK0 7FE 0 ABS 0 nvBANK0 -
+__LnvBANK0 7FE 0 ABS 0 nvBANK0 -
+__pnvBANK0 40 0 BANK0 1 nvBANK0 dist/default/production\stab.X.production.obj
+_eeprom_write 34C 0 CODE 0 text3 dist/default/production\stab.X.production.obj
+__size_of_button_action 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hstrings 7FE 0 ABS 0 strings -
+__Lstrings 7FE 0 ABS 0 strings -
+_start_flag 34 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__end_of_high_isr 2F8 0 CODE 0 text5 dist/default/production\stab.X.production.obj
+__Hbank0 7FE 0 ABS 0 bank0 -
+__Lbank0 7FE 0 ABS 0 bank0 -
+__Hbank1 7FE 0 BANK1 1 bank1 -
+__Lbank1 7FE 0 BANK1 1 bank1 -
+___latbits 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__Lpowerup 0 0 CODE 0 powerup -
+__ptext1 384 0 CODE 0 text1 dist/default/production\stab.X.production.obj
+eeprom_read@addr 37 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+__ptext2 3AE 0 CODE 0 text2 dist/default/production\stab.X.production.obj
+__ptext3 34C 0 CODE 0 text3 dist/default/production\stab.X.production.obj
+__ptext4 2F8 0 CODE 0 text4 dist/default/production\stab.X.production.obj
+__ptext5 214 0 CODE 0 text5 dist/default/production\stab.X.production.obj
+__Hclrtext 7FE 0 ABS 0 clrtext -
+__Lclrtext 7FE 0 ABS 0 clrtext -
+__end_of__initialization 22 0 CODE 0 cinit dist/default/production\stab.X.production.obj
+_adc_counter 2C 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__end_of___lwdiv 34C 0 CODE 0 text4 dist/default/production\stab.X.production.obj
+_btn_counter 2E 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+_milisec 24 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Lidloc 0 0 IDLOC 0 idloc -
+_volt_average 28 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__Hstack 0 0 STACK 2 stack -
+__Lstack 0 0 STACK 2 stack -
+__size_of_high_isr 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+eeprom_write@addr 38 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Lspace_0 0 0 ABS 0 - -
+_measure 22 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__Hspace_1 7FE 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Hcinit 26 0 CODE 0 cinit -
+__Lcinit 18 0 CODE 0 cinit -
+__Hspace_3 0 0 ABS 0 - -
+___lwdiv 2F8 0 CODE 0 text4 dist/default/production\stab.X.production.obj
+__Lspace_3 0 0 ABS 0 - -
+__size_of_main 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+_button_action 3AE 0 CODE 0 text2 dist/default/production\stab.X.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+_eeprom_read 384 0 CODE 0 text1 dist/default/production\stab.X.production.obj
+eeprom_write@value 37 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+clear_ram0 3C6 0 CODE 0 clrtext dist/default/production\stab.X.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__HbssBANK0 7FE 0 ABS 0 bssBANK0 -
+__LbssBANK0 7FE 0 ABS 0 bssBANK0 -
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__Hpa_nodes 7FE 0 ABS 0 pa_nodes -
+__Lpa_nodes 7FE 0 ABS 0 pa_nodes -
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hend_init 18 0 CODE 0 end_init -
+__Lend_init 16 0 CODE 0 end_init -
+_reg_on_flag 33 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+___lwdiv@divisor 37 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+_GO_nDONE F9 0 ABS 0 - dist/default/production\stab.X.production.obj
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+intlevel0 0 0 CODE 0 functab C:\Users\adm\AppData\Local\Temp\s3ps.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+intlevel1 0 0 CODE 0 functab C:\Users\adm\AppData\Local\Temp\s3ps.obj
+intlevel2 0 0 CODE 0 functab C:\Users\adm\AppData\Local\Temp\s3ps.obj
+intlevel3 0 0 CODE 0 functab C:\Users\adm\AppData\Local\Temp\s3ps.obj
+intlevel4 0 0 CODE 0 functab C:\Users\adm\AppData\Local\Temp\s3ps.obj
+intlevel5 0 0 CODE 0 functab C:\Users\adm\AppData\Local\Temp\s3ps.obj
+__end_ofPL2 1FA 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+__HcstackCOMMON 7FE 0 ABS 0 cstackCOMMON -
+__LcstackCOMMON 7FE 0 ABS 0 cstackCOMMON -
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/production\stab.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+start_initialization 18 0 CODE 0 cinit dist/default/production\stab.X.production.obj
+_led_flash_set 40 0 BANK0 1 nvBANK0 dist/default/production\stab.X.production.obj
+___lwdiv@quotient 3B 0 BANK0 1 cstackBANK0 dist/default/production\stab.X.production.obj
+__end_of_eeprom_read 3AE 0 CODE 0 text1 dist/default/production\stab.X.production.obj
+__end_ofPL4 208 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+__Hmaintext 7FE 0 ABS 0 maintext -
+__Lmaintext 7FE 0 ABS 0 maintext -
+__pmaintext 26 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+__initialization 18 0 CODE 0 cinit dist/default/production\stab.X.production.obj
+__end_of_eeprom_write 384 0 CODE 0 text3 dist/default/production\stab.X.production.obj
+__CFG_FOSC$INTRCIO 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+__end_ofPL6 214 0 CODE 0 maintext dist/default/production\stab.X.production.obj
+_btn_release 30 0 BANK0 1 bssBANK0 dist/default/production\stab.X.production.obj
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/production\stab.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 5E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+intentry 0 4 8 1E7 2
+config 0 2007 400E 1 2
+bssBANK0 1 20 20 21 1

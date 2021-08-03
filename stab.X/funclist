@@ -1,0 +1,11 @@
+_button_action: CODE, 471 0 12
+_main: CODE, 19 0 218
+_high_isr: CODE, 266 0 114
+__initialization: CODE, 12 0 5
+___lwdiv: CODE, 380 0 42
+PL2: CODE, 237 0 16
+_eeprom_read: CODE, 450 0 21
+PL4: CODE, 253 0 7
+_eeprom_write: CODE, 422 0 28
+PL6: CODE, 260 0 6
+Total: 469
